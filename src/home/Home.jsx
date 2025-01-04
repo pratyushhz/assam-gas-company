@@ -4,6 +4,7 @@ import HomeAbout from '../home/HomeAbout'
 import CounterUp from '../components/CounterUp'
 import NewUpdates from '../components/NewUpdates'
 import Customer from '../components/Customer'
+import HomeNews from './HomeNews'
 
 const Home = () => {
     return(
@@ -14,6 +15,7 @@ const Home = () => {
             <CounterUp/>
             <NewUpdates/>
             <Customer/>
+            <HomeNews/>
         </>
     )
 }

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import AgclLogo from "../../assets/new-images/logo/Fw_ Company Logo/AGCL_Logo.png"
 const Navbar = () => {
     return(
         <div>
@@ -135,7 +135,7 @@ const Navbar = () => {
 
           <div className="container-fluid" style={{paddingRight:"0"}}>
             <Link to="#" className="navbar-brand" href="index.html">
-              <img src="#" className="logo" alt="logo" style={{maxWidth:"240px"}} />
+              <img src={AgclLogo} className="logo" alt="logo" style={{maxWidth:"240px"}} />
             </Link>
             <button className="navbar-toggler" type="button">
               <span className="menu-lines"><span></span></span>

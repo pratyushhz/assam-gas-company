@@ -1,3 +1,4 @@
+import CustomerServices from "./home-customer/CustomerServices";
 import CustomerUpdates from "./home-customer/CustomerUpdate";
 
 const Customer = () => {
@@ -6,6 +7,7 @@ const Customer = () => {
             <div className="container">
                 <div className="row">
                     <CustomerUpdates/>
+                    <CustomerServices/>
                 </div>
             </div>
         </section>
