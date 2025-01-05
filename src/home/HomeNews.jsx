@@ -1,11 +1,12 @@
-import React from 'react';
+// import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay } from 'swiper';
-// import 'swiper/swiper-bundle.min.css';
-import slides from '../utils/swiperSlides';
-import swiperSliderBg from "../assets/new-images/about-us-img.jpg"
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import slides from "../utils/swiperSlides"
+import swiperSliderBg from '../assets/new-images/about-us-img.jpg';
 
-SwiperCore.use([Autoplay]);
+
 
 const HomeNews = () => {
   return (
@@ -13,14 +14,14 @@ const HomeNews = () => {
       <div className="container">
         <div
           className="row mb-40"
-          style={{ position: 'relative', zIndex: 10 }}
+          style={{ position: "relative", zIndex: 10 }}
           data-aos="fade-up"
           data-aos-offset="0"
         >
           <div className="col-12">
             <h2
               className="heading__subtitle color-primary1 heading-badge mb-0"
-              style={{ width: 'fit-content', color: '#fff' }}
+              style={{ width: "fit-content", color: "#fff" }}
             >
               News
             </h2>
@@ -30,7 +31,7 @@ const HomeNews = () => {
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-1">
             <a
-              href="javascript:void(0)"
+              href="#"
               className="new-btn-style btn btn__primary btn__outlined btn__custom"
             >
               <i className="icon-arrow-right"></i>
@@ -63,15 +64,24 @@ const HomeNews = () => {
               slidesPerView: 2.2,
             },
           }}
+          modules={[Autoplay]}
         >
-          {slides.map((swiperslide, index) => (
+          {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <img src={swiperslide.img} alt={`Image ${index + 1}`} />
+              <img
+                src={slide.img}
+                alt={`Image ${index + 1}`}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
               <div className="slide-content">
-                <h2>{swiperslide.title}</h2>
-                <p>{swiperslide.description}</p>
+                <h2>{slide.title}</h2>
+                <p>{slide.description}</p>
                 <a
-                  href="javascript:void(0)"
+                  href="#"
                   className="btn btn__primary btn__primary-style2 mr-30 mt-4"
                 >
                   <i className="icon-arrow-right"></i>

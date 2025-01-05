@@ -200,10 +200,10 @@ const Navbar = () => {
                   <button className="dropdown-toggle" data-toggle="dropdown"></button>
                 <ul className="dropdown-menu">
                   <li className="nav__item">
-                    <Link to="/who-we-are" className="nav__item-link">Who we are</Link>
+                    <Link to="/whoweare" className="nav__item-link">Who we are</Link>
                   </li>
                   <li className="nav__item">
-                    <Link to="#" className="nav__item-link">Vision</Link>
+                    <Link to="/vision" className="nav__item-link">Vision</Link>
                   </li>
                   <li className="nav__item">
                     <Link to="#" className="nav__item-link">Our Leadership</Link>

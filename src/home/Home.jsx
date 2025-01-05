@@ -5,6 +5,9 @@ import CounterUp from '../components/CounterUp'
 import NewUpdates from '../components/NewUpdates'
 import Customer from '../components/Customer'
 import HomeNews from './HomeNews'
+import Certification from './Certification'
+import Legacy from './Legacy'
+import Partners from './Partners'
 
 const Home = () => {
     return(
@@ -16,6 +19,9 @@ const Home = () => {
             <NewUpdates/>
             <Customer/>
             <HomeNews/>
+            <Certification/>
+            <Legacy/>
+            <Partners/>
         </>
     )
 }
