@@ -9309,11 +9309,11 @@ textarea.form-control {
   margin-bottom: 10px;
   display: block;
 }
-.single__install--content .install__meta a h5 {
+.single__install--content .install__meta h5 {
   font-size: 16px;
   color: #fff;
 }
-.single__install--content .install__meta a.read-more-btn {
+.single__install--content .install__meta .read-more-btn {
   font-weight: 600;
   color: #fff;
   transition: all 0.3s ease-in;
@@ -9326,81 +9326,6 @@ textarea.form-control {
 }
 
 
-
-/* Floating widget fixed to bottom-right corner */
-/* .gas-price-widget {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  min-width: 180px;
-  max-width: 90%;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(74, 171, 61, 0.7) ), url('https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-the-internet-financial-economic-data-image_13173.jpg') center/cover no-repeat;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  z-index: 9999;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  color: #fff;  
-}
-
-
-.gas-price-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-}
-
-.price-item {
-  display: none; 
-  text-align: center;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.price-item h3 {
-  font-size: 1rem;
-  margin: 0;
-  font-weight: 600;
-  color: #fff;
-}
-
-
-.price-value {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5px;
-}
-
-.price {
-  font-size: 1.2rem;
-  color: #fff; 
-  margin-right: 8px;
-  font-weight: bold;
-}
-
-.change-icon {
-  font-size: 1.2rem;
-  color: #fff; 
-  margin-left: 5px;
-}
-
-
-.price-item.active {
-  display: block;
-  opacity: 1;
-}
-
-
-@media (max-width: 500px) {
-  .gas-price-widget {
-    width: 180px;
-    padding: 12px;
-  }
-} */
 
 .gas-price-widget {
     position: fixed;
@@ -11680,7 +11605,10 @@ ol li {
       margin-right: -4px
   }
 }
-
+.agcl_mission .slick-initialized .slick-slide {
+  width: 263px !important;
+}
+.agcl_mission .slick-slider {padding: 40px 15px !important;}
 .who-we-are .slick-slide img {
   height: 240px;
   object-fit: cover;

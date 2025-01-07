@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Description = ({ title, paragraphs }) => {
   return (
-    <section className="pt-60 who-we-are">
+    <section className="pt-0 pb-0 who-we-are">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-6">
@@ -22,5 +23,8 @@ const Description = ({ title, paragraphs }) => {
     </section>
   );
 };
-
+Description.propTypes = {
+  title: PropTypes.string.isRequired,
+  paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired
+};
 export default Description;

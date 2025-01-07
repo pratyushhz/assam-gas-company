@@ -134,7 +134,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg sticky-navbar">
 
           <div className="container-fluid" style={{paddingRight:"0"}}>
-            <Link to="#" className="navbar-brand" href="index.html">
+            <Link to="/" className="navbar-brand" href="index.html">
               <img src={AgclLogo} className="logo" alt="logo" style={{maxWidth:"240px"}} />
             </Link>
             <button className="navbar-toggler" type="button">
@@ -206,7 +206,7 @@ const Navbar = () => {
                     <Link to="/vision" className="nav__item-link">Vision</Link>
                   </li>
                   <li className="nav__item">
-                    <Link to="#" className="nav__item-link">Our Leadership</Link>
+                    <Link to="/leadership" className="nav__item-link">Our Leadership</Link>
                   </li>
                   <li className="nav__item">
                     <Link to="#" className="nav__item-link">MD's Message</Link>

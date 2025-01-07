@@ -1,31 +1,3 @@
-/*--------------------------
-    Project Name: Solatec
-    Version: 1.0
-    Author: 7oorof
-    Devloped by: Ahmed Abdallah (a.abdallah999@gmail.com)
-    Relase Date: July 2021
----------------------------*/
-/*---------------------------
-      Table of Contents
-    --------------------
-    01- Pre Loading
-    02- Mobile Menu
-    03- Sticky Navbar
-    04- Search Popup 
-    05- Scroll Top Button
-    06-  Scroll Top Button
-    07- Set Background-img to section 
-    08- Add active class to accordions
-    09- Load More Items
-    10- Slick Carousel
-    11- Popup Video
-    12- CounterUp
-    13- NiceSelect Plugin
-    14- portfolio Filtering and Sorting
-    15- Range Slider
-     
- ----------------------------*/
-
 $(function () {
 
     "use strict";
@@ -140,81 +112,81 @@ $(function () {
     loadMore('.loadMoreportfolio', '.portfolio-hidden > .portfolio-item');
 
     /*==========   Slick Carousel ==========*/
-    $('.slick-carousel').slick();
+    // $('.slick-carousel').slick();
 
-    $('.slider-with-navs').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        dots: true,
-        asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        asNavFor: '.slider-with-navs',
-        dots: false,
-        arrows: false,
-        focusOnSelect: true,
-        centerMode: true,
-        centerPadding: '50px',
-        responsive: [{
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }]
-    });
+    // $('.slider-with-navs').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     fade: true,
+    //     dots: true,
+    //     asNavFor: '.slider-nav'
+    // });
+    // $('.slider-nav').slick({
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1,
+    //     asNavFor: '.slider-with-navs',
+    //     dots: false,
+    //     arrows: false,
+    //     focusOnSelect: true,
+    //     centerMode: true,
+    //     centerPadding: '50px',
+    //     responsive: [{
+    //         breakpoint: 992,
+    //         settings: {
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1,
+    //         }
+    //     }]
+    // });
 
     /*----------  slick Carousel with Filter  ----------*/
-    $('#slick-filter-buttons .nav__link').on('click', function (e) {
-        e.preventDefault();
-        $(this).addClass('active').siblings().removeClass('active');
-        var key = "." + $(this).data('value');
+    // $('#slick-filter-buttons .nav__link').on('click', function (e) {
+    //     e.preventDefault();
+    //     $(this).addClass('active').siblings().removeClass('active');
+    //     var key = "." + $(this).data('value');
 
-        $('#filter-carousel').slick('slickUnfilter');
-        $('#filter-carousel').slick('slickFilter', key).slick('refresh');
-        $('#filter-carousel').slick('slickGoTo', 0);
-    });
+    //     $('#filter-carousel').slick('slickUnfilter');
+    //     $('#filter-carousel').slick('slickFilter', key).slick('refresh');
+    //     $('#filter-carousel').slick('slickGoTo', 0);
+    // });
 
 
     /*==========  Popup Video  ==========*/
-    $('.popup-video').magnificPopup({
-        mainClass: 'mfp-fade',
-        removalDelay: 0,
-        preloader: false,
-        fixedContentPos: false,
-        type: 'iframe',
-        iframe: {
-            markup: '<div class="mfp-iframe-scaler">' +
-                '<div class="mfp-close"></div>' +
-                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-                '</div>',
-            patterns: {
-                youtube: {
-                    index: 'youtube.com/',
-                    id: 'v=',
-                    src: '//www.youtube.com/embed/%id%?autoplay=1'
-                }
-            },
-            srcAction: 'iframe_src',
-        }
-    });
-    $('.popup-gallery-item').magnificPopup({
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1]
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-        }
-    });
+    // $('.popup-video').magnificPopup({
+    //     mainClass: 'mfp-fade',
+    //     removalDelay: 0,
+    //     preloader: false,
+    //     fixedContentPos: false,
+    //     type: 'iframe',
+    //     iframe: {
+    //         markup: '<div class="mfp-iframe-scaler">' +
+    //             '<div class="mfp-close"></div>' +
+    //             '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+    //             '</div>',
+    //         patterns: {
+    //             youtube: {
+    //                 index: 'youtube.com/',
+    //                 id: 'v=',
+    //                 src: '//www.youtube.com/embed/%id%?autoplay=1'
+    //             }
+    //         },
+    //         srcAction: 'iframe_src',
+    //     }
+    // });
+    // $('.popup-gallery-item').magnificPopup({
+    //     type: 'image',
+    //     tLoading: 'Loading image #%curr%...',
+    //     mainClass: 'mfp-img-mobile',
+    //     gallery: {
+    //         enabled: true,
+    //         navigateByImgClick: true,
+    //         preload: [0, 1]
+    //     },
+    //     image: {
+    //         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+    //     }
+    // });
 
     /*==========   counterUp  ==========*/
     $(".counter").counterUp({
