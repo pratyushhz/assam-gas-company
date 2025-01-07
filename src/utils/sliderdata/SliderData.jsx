@@ -1,7 +1,7 @@
 const sliderData = [
   {
     id: 1,
-    image: "./src/assets/new-images/slider-1.jpg",
+    image: "../../../assets/new-images/slider-1.jpg", // From the public folder
     subtitle: "WELCOME TO ASSAM GAS COMPANY",
     title: "Connecting Assam with Energy for Tomorrow",
     badge: "WELCOME",
@@ -16,6 +16,3 @@ const sliderData = [
 ];
 
 export default sliderData;
-
-
-

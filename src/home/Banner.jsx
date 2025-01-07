@@ -1,10 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; // Core styles
+import "slick-carousel/slick/slick-theme.css"; // Optional theme
+
 import sliderData from "../utils/sliderdata/SliderData";
 
 const Banner = () => {
   const settings = {
-    slidesToShow: 2,
+    slidesToShow: 1,
     arrows: false,
     autoplay: true,
     dots: true,
@@ -17,10 +20,16 @@ const Banner = () => {
     <section className="slider">
       <Slider {...settings}>
         {sliderData.map((slide) => (
-          <div className="slide-item align-v-h bg-overlay bg-overlay-2" key={slide.id}>
-            <div className="bg-img">
-              <img src={slide.image} alt="slide img" />
-            </div>
+          <div
+            className="slide-item align-v-h bg-overlay bg-overlay-2"
+            key={slide.id}
+            style={{
+              backgroundImage: `url(${slide.image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
             <div className="container">
               <div className="row">
                 <div className="col-sm-12 col-md-12 col-lg-12 col-xl-8">
