@@ -16,7 +16,7 @@ const Verticals = () => {
         "https://i0.wp.com/cgdindia.net/wp-content/uploads/2023/10/PNG-3.jpg?fit=626%2C470&ssl=1",
       altText: "PNG",
       category: "Vertical",
-      detailsLink: "",
+      detailsLink: "/citygasdistribution",
     },
     {
       name: "Retail Fuel Outlet",

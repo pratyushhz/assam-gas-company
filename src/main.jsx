@@ -9,6 +9,7 @@ import "../src/assets/css/style-6.css"
 import WhoWeAre from './components/pages/who-we-are/WhoWeAre.jsx';
 import Vision from "./components/pages/vision/Vision.jsx"
 import Leadership from './components/pages/Leadership.jsx';
+import CityGas from './components/pages/CityGas.jsx';
 
 const router = createBrowserRouter([
   { path: "/", 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path:"leadership",
         element:<Leadership />
+      },
+      {
+        path:"citygasdistribution",
+        element:<CityGas />
       }
     ]
     
